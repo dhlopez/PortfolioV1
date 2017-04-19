@@ -20,6 +20,7 @@
 	}
 	.bg-2{
 		 background-color: #A1A6B4;
+		 margin: 0 auto;
 	}
 	.bg-3{
 		 background-color: #2C363F;
@@ -378,6 +379,14 @@
 }
 .navbar-default .navbar-brand-logo .brand{
     color: #555;
+}
+
+.icon{
+	margin:3px;
+	display: inline-block;
+	border-radius: 25px;
+	width:105px;
+	Height:99px;
 }
 
 
