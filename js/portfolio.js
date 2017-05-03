@@ -1,5 +1,5 @@
  $(document).ready(function(){
-	 console.info("Dave");
+	 
 	 $("#myNavbar a").on('click', function(event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
@@ -20,4 +20,31 @@
 		  });
 		}  // End if
 	});
+	$('#wineAwakeningsRow').hide();
+	$('#ptLevelsRow').hide();
+	
+	$("#wineAwakenings").click(function(e){
+		$('#wineAwakeningsRow').toggle();
+		e.preventDefault();
+		var pos =$("#wineAwakeningsRow").offset().top;
+		console.info(pos);
+		if(pos>0)
+		{
+			pos-=110;
+			$('body, html').animate({scrollTop: pos});
+		}
+		
+	});
+	$("#ptLevels").click(function(e){
+		$('#ptLevelsRow').toggle();
+		e.preventDefault();
+		var pos =$("#ptLevelsRow").offset().top;
+		console.info(pos);
+		if(pos>0)
+		{
+			pos-=110;
+			$('body, html').animate({scrollTop: pos});
+		}
+	});
+	
   });

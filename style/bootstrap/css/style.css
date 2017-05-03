@@ -388,7 +388,10 @@
 	width:105px;
 	Height:99px;
 }
-
+#wineAwakenings, #ptLevels
+{
+	cursor:pointer;
+}
 
 /*       Fix bug for IE      */
 
